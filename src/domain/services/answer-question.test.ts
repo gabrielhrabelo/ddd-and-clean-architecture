@@ -5,7 +5,7 @@ import { AnswerQuestionService } from './answer-question.ts'
 
 const fakeAnswersRepository: AnswersRepository = {
   create: async (answer: Answer) => {
-    return
+    return undefined
   },
 }
 
