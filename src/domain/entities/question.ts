@@ -1,11 +1,15 @@
 import { Entity } from '../../core/entities/entity.ts'
+import type { UniqueEntityID } from '../../core/entities/unique-entity-id.ts'
 import type { Slug } from './value-objects/slug.ts'
 
 interface QuestionProps {
   title: string
-  authorId: string
+  authorId: UniqueEntityID
+  bestAnswerId?: UniqueEntityID
   content: string
   slug: Slug
+  createdAt: Date
+  updatedAt?: Date
 }
 
 export class Question extends Entity<QuestionProps> {}
