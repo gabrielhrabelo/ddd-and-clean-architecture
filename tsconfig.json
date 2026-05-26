@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    /* Base Options */
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ESNext"],
+    "types": ["node"],
+
+    /* Strictness */
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Native Node.js 26 Compatibility */
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true,
+    "verbatimModuleSyntax": true,
+    "noEmit": true, // Often used when running via 'node --experimental-strip-types'
+
+    /* Path Mapping */
+    "paths": {
+      "@/*": ["./src/*"],
+    },
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
+}
