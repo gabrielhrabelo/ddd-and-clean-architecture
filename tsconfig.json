@@ -5,7 +5,7 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "lib": ["ESNext"],
-    "types": ["node"],
+    "types": ["node", "vitest/globals"],
 
     /* Strictness */
     "strict": true,
@@ -20,9 +20,9 @@
 
     /* Path Mapping */
     "paths": {
-      "@/*": ["./src/*"],
-    },
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules"]
 }
